@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LeadSpot")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b3f4334f261c8e73828feeb7efa279c93e602ea7")]
 [assembly: System.Reflection.AssemblyProductAttribute("LeadSpot")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LeadSpot")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -14,7 +14,7 @@
         </thead>
         <tbody>
         
-        @if (Model.Count() > 0)
+        @if (Model != null && Model.Count > 0)
         {
             @foreach (var user in Model)
             {

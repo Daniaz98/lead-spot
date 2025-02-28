@@ -75,3 +75,4 @@ C:\Users\danie\RiderProjects\LeadSpot\LeadSpot\obj\Debug\net8.0\refint\LeadSpot.
 C:\Users\danie\RiderProjects\LeadSpot\LeadSpot\obj\Debug\net8.0\LeadSpot.pdb
 C:\Users\danie\RiderProjects\LeadSpot\LeadSpot\obj\Debug\net8.0\LeadSpot.genruntimeconfig.cache
 C:\Users\danie\RiderProjects\LeadSpot\LeadSpot\obj\Debug\net8.0\ref\LeadSpot.dll
+C:\Users\danie\RiderProjects\LeadSpot\LeadSpot\obj\Debug\net8.0\LeadSpot.sourcelink.json
