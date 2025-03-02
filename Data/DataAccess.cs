@@ -4,12 +4,14 @@ using Microsoft.Data.SqlClient;
 
 namespace LeadSpot.Data;
 
-public class DataAccess
+public class DataAccess 
 {    
      //conexão ao banco
-     private SqlConnection _connection = null!;
+     SqlConnection _connection = null!;
+     
      //comandos de requisição
-     private SqlCommand _command = null!;
+     SqlCommand _command = null!;
+     
      //Auxilia na conexão utilizando a conexão string em appsettings
      public static IConfiguration Configuration { get; set; }
 
@@ -31,7 +33,7 @@ public class DataAccess
           {
                _command = _connection.CreateCommand();
                _command.CommandType = CommandType.StoredProcedure;
-               _command.CommandText = "[DBO].[listar_usuarios]";
+               _command.CommandText = "[DBO].[list_usuarios]";
                
                _connection.Open();
                
@@ -41,14 +43,16 @@ public class DataAccess
                {
                     User user = new User();
                     
-                    user.Id = (int)reader["Id"];
-                    user.Name = (string)reader["Name"];
-                    user.Email = (string)reader["Email"];
-                    user.Number = (string)reader["Number"];
+                    user.Id = Convert.ToInt32(reader["Id"]);
+                    user.Name = reader["Name"].ToString();
+                    user.Email = reader["Email"].ToString();
+                    user.Number = reader["Number"].ToString();
+                    user.Status = reader["Status_lead"].ToString();
                     
                     users.Add(user);
                     
                }
+               
                _connection.Close();
           }
           return users;
